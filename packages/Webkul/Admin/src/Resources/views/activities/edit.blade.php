@@ -99,7 +99,7 @@
                                             class="control"
                                             value="{{ old('schedule_from') ?: $activity->schedule_from }}"
                                             placeholder="{{ __('admin::app.activities.from') }}" ref="schedule_from"
-                                            v-validate="'required|date_format:yyyy-MM-dd HH:mm:ss|after:{{\Carbon\Carbon::now()->format('Y-m-d H:i:s')}}'"
+                                            v-validate="'required|date_format:yyyy-MM-dd HH:mm:ss'"
                                             data-vv-as="&quot;{{ __('admin::app.activities.from') }}&quot;"
                                         >
         
